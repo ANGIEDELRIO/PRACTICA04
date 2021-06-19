@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'dart:math';
 import 'dart:ui';
 
@@ -44,7 +45,7 @@ class InputPage extends StatelessWidget {
               BottomNavigationBarItem(
                   icon: Icon(Icons.search), label: 'search'),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.crop_square), label: 'principal'),
+                  icon: Icon(Icons.favorite), label: 'principal'),
               BottomNavigationBarItem(
                   icon: Icon(Icons.message), label: 'message'),
               BottomNavigationBarItem(
@@ -132,7 +133,7 @@ class Content2 extends StatelessWidget {
         children: [
           Item(
             color: Colors.blue,
-            icon: Icons.cached,
+            icon: Icons.tv,
             texto: 'Washer Machine Oven',
           ),
           Item(
@@ -170,21 +171,20 @@ class Content extends StatelessWidget {
             texto: 'Speakers',
           ),
           Item(
-            color: Colors.blue,
-            icon: Icons.double_arrow,
-            texto: 'Air Conditioner',
-          ),
+              color: Colors.blue,
+              icon: Icons.double_arrow,
+              texto: 'Air Conditioner'),
         ]),
         TableRow(children: [
           Item(
-            color: Colors.amber,
-            icon: Icons.camera,
-            texto: 'Television',
+            color: Colors.blueGrey[400],
+            icon: Icons.radio,
+            texto: 'Radio             4.1 ★ ★ ★ ★ ✰ ',
           ),
           Item(
-            color: Colors.brown,
-            icon: Icons.bus_alert,
-            texto: 'Television',
+            color: Colors.blueGrey[400],
+            icon: Icons.tv,
+            texto: 'Television             5.0 ★ ★ ★ ★ ★',
           ),
         ]),
       ],
