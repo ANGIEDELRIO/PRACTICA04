@@ -26,7 +26,6 @@ class InputPage extends StatelessWidget {
                       Content2(),
                       TextoSecundario(textoSecundario: 'ALL'),
                       Content(),
-                      img()
                     ],
                   ),
                 )),
@@ -132,14 +131,14 @@ class Content2 extends StatelessWidget {
       TableRow(
         children: [
           Item(
-            color: Colors.blue,
+            color: Colors.blueGrey[700],
             icon: Icons.tv,
-            texto: 'Washer Machine Oven',
+            texto: 'Washer Machine              4.6 ★ ★ ★ ★ ✰',
           ),
           Item(
-            color: Colors.orange,
-            icon: Icons.access_alarm,
-            texto: 'Dryer Machine',
+            color: Colors.blueGrey[700],
+            icon: Icons.mark_chat_read_outlined,
+            texto: 'Dryer Machine             3.9 ★ ★ ★ ✰ ✰',
           ),
         ],
       ),
@@ -154,35 +153,35 @@ class Content extends StatelessWidget {
       children: [
         TableRow(children: [
           Item(
-            color: Colors.blue,
-            icon: Icons.cached,
-            texto: 'Microwawe Oven',
+            color: Colors.blueGrey[700],
+            icon: Icons.microwave_outlined,
+            texto: 'Microwawe Oven             4.6 ★ ★ ★ ★ ✰',
           ),
           Item(
-            color: Colors.orange,
-            icon: Icons.access_alarm,
-            texto: 'Whisk',
+            color: Colors.blueGrey[700],
+            icon: Icons.widgets_outlined,
+            texto: 'Whisk             3.3 ★ ★ ★ ✰ ✰',
           ),
         ]),
         TableRow(children: [
           Item(
-            color: Colors.black,
-            icon: Icons.data_usage,
-            texto: 'Speakers',
+            color: Colors.blueGrey[700],
+            icon: Icons.speaker,
+            texto: 'Speakers             4.6 ★ ★ ★ ★ ✰',
           ),
           Item(
-              color: Colors.blue,
-              icon: Icons.double_arrow,
-              texto: 'Air Conditioner'),
+              color: Colors.blueGrey[700],
+              icon: Icons.airplay_sharp,
+              texto: 'Air Conditioner             5.0 ★ ★ ★ ★ ★'),
         ]),
         TableRow(children: [
           Item(
-            color: Colors.blueGrey[400],
+            color: Colors.blueGrey[700],
             icon: Icons.radio,
             texto: 'Radio             4.1 ★ ★ ★ ★ ✰ ',
           ),
           Item(
-            color: Colors.blueGrey[400],
+            color: Colors.blueGrey[700],
             icon: Icons.tv,
             texto: 'Television             5.0 ★ ★ ★ ★ ★',
           ),
@@ -190,34 +189,6 @@ class Content extends StatelessWidget {
       ],
     );
   }
-}
-
-Widget img() {
-  return Padding(
-    padding: const EdgeInsets.all(50.0),
-    child: Container(
-        child: Column(
-      children: <Widget>[
-        Container(
-          margin: EdgeInsets.symmetric(horizontal: 8),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(1),
-          ),
-          child: Container(
-            padding: EdgeInsets.all(2),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image(
-                  image: NetworkImage('assets/imagen1.png'),
-                  height: 100,
-                  width: 100,
-                  fit: BoxFit.cover),
-            ),
-          ),
-        ),
-      ],
-    )),
-  );
 }
 
 class Item extends StatelessWidget {
